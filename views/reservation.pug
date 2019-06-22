@@ -1,0 +1,247 @@
+extends layout
+
+block content
+    // END nav
+    section.home-slider.owl-carousel
+      .slider-item(style="background-image: url('images/bg_1.jpg');", data-stellar-background-ratio='0.5')
+        .overlay
+        .container
+          .row.slider-text.align-items-end
+            .col-md-10.col-sm-12.ftco-animate.mb-4
+              p.breadcrumbs
+                span.mr-2
+                  a(href='index.html') Home
+                span Booking
+              h1.mb-3 Booking
+    section.ftco-section
+      .container
+        .row.d-flex
+          .col-md-12.ftco-animate.makereservation.p-5.bg-light
+            form(action='#')
+              h2.mb-4 Contact Details
+              .row.mb-5
+                .col-md-4
+                  .form-group
+                    label(for='name') First Name
+                    input.form-control(type='text', placeholder='First Name')
+                .col-md-4
+                  .form-group
+                    label(for='name') Last Name
+                    input.form-control(type='text', placeholder='Last Name')
+                .col-md-4
+                  .form-group
+                    label(for='') Select Country
+                    .select-wrap.one-third
+                      .icon
+                        span.ion-ios-arrow-down
+                      select.countrypicker.form-control(data-live-search='true', data-default='Country of Passport', data-flag='false')
+                .col-md-4
+                  .form-group
+                    label(for='') Email
+                    input.form-control(type='text', placeholder='Your Email')
+                .col-md-4
+                  .form-group
+                    label(for='') Address
+                    input.form-control(type='text', placeholder='Phone')
+                .col-md-4
+                  .form-group
+                    label(for='') Phone
+                    input.form-control(type='text', placeholder='Phone')
+              .row.mb-5
+                .col-md-12
+                  h2.mb-4 Guest Details
+                .col-md-12
+                  h3.h4 Superior Room - Twin - Best available
+                .col-md-6
+                  .form-group
+                    label(for='name') First Name
+                    input.form-control(type='text', placeholder='First Name')
+                .col-md-6
+                  .form-group
+                    label(for='name') Last Name
+                    input.form-control(type='text', placeholder='Last Name')
+                .col-md-6
+                  .form-group
+                    label(for='') Select Country
+                    .select-wrap.one-third
+                      .icon
+                        span.ion-ios-arrow-down
+                      select.countrypicker.form-control(data-live-search='true', data-default='Country of Passport', data-flag='false')
+                .col-md-6
+                  .form-group
+                    label(for='') Date of Birth
+                    input#birth_date.form-control(type='text', placeholder='Birth Date')
+              .row.mb-5
+                .col-md-12
+                  h2.mb-4 Flight Details
+                .col-md-6.d-flex
+                  .form-group.mr-4
+                    label(for='') Arrival Date
+                    input#arrival_date.form-control(type='text', placeholder='Date')
+                  .form-group
+                    label(for='') Arrival Time
+                    input#arrival_time.form-control(type='text', placeholder='Time')
+                .col-md-6.d-flex
+                  .form-group.mr-4
+                    label(for='') Departure Date
+                    input#departure_date.form-control(type='text', placeholder='Date')
+                  .form-group
+                    label(for='') Departure Time
+                    input#arrival_time.form-control(type='text', placeholder='Time')
+              .row.mb-5
+                .col-md-12
+                  h2.mb-4 Payment Details
+                .col-md-4
+                  .form-group
+                    label(for='') Card Type
+                    .select-wrap.one-third
+                      .icon
+                        span.ion-ios-arrow-down
+                      select.form-control(name='', id='')
+                        option(value='') Visa
+                        option(value='') Master Card
+                        option(value='') Credit Card
+                .col-md-4
+                  .form-group
+                    label(for='name') Card No
+                    input.form-control(type='text', placeholder='')
+                .col-md-4
+                  .form-group
+                    label(for='name') Name on Card
+                    input.form-control(type='text', placeholder='')
+                .col-md-6
+                  .form-group.mr-4
+                    label(for='') Expiration Date
+                    input#expiration_date.form-control(type='text', placeholder='')
+    section.instagram
+      .container-fluid
+        .row.no-gutters.justify-content-center.pb-5
+          .col-md-7.text-center.heading-section.ftco-animate
+            h2
+              span.icon-instagram
+              |  Instagram
+        .row.no-gutters
+          .col-sm-12.col-md.ftco-animate
+            a.insta-img.image-popup(href='images/insta-1.jpg', style='background-image: url(images/insta-1.jpg);')
+              .icon.d-flex.justify-content-center
+                span.icon-instagram.align-self-center
+          .col-sm-12.col-md.ftco-animate
+            a.insta-img.image-popup(href='images/insta-2.jpg', style='background-image: url(images/insta-2.jpg);')
+              .icon.d-flex.justify-content-center
+                span.icon-instagram.align-self-center
+          .col-sm-12.col-md.ftco-animate
+            a.insta-img.image-popup(href='images/insta-3.jpg', style='background-image: url(images/insta-3.jpg);')
+              .icon.d-flex.justify-content-center
+                span.icon-instagram.align-self-center
+          .col-sm-12.col-md.ftco-animate
+            a.insta-img.image-popup(href='images/insta-4.jpg', style='background-image: url(images/insta-4.jpg);')
+              .icon.d-flex.justify-content-center
+                span.icon-instagram.align-self-center
+          .col-sm-12.col-md.ftco-animate
+            a.insta-img.image-popup(href='images/insta-5.jpg', style='background-image: url(images/insta-5.jpg);')
+              .icon.d-flex.justify-content-center
+                span.icon-instagram.align-self-center
+    footer.ftco-footer.ftco-bg-dark.ftco-section
+      .container
+        .row.mb-5
+          .col-md
+            .ftco-footer-widget.mb-4
+              h2.ftco-heading-2 Cozy
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+              ul.ftco-footer-social.list-unstyled.float-md-left.float-lft
+                li.ftco-animate
+                  a(href='#')
+                    span.icon-twitter
+                li.ftco-animate
+                  a(href='#')
+                    span.icon-facebook
+                li.ftco-animate
+                  a(href='#')
+                    span.icon-instagram
+          .col-md
+            .ftco-footer-widget.mb-4
+              h2.ftco-heading-2 Opening Hours
+              ul.list-unstyled
+                li
+                  a.py-2.d-block(href='#')
+                    | Monday: 
+                    span 08: - 22:00
+                li
+                  a.py-2.d-block(href='#')
+                    | Tuesday: 
+                    span 08: - 22:00
+                li
+                  a.py-2.d-block(href='#')
+                    | Wednesday: 
+                    span 08: - 22:00
+                li
+                  a.py-2.d-block(href='#')
+                    | Thursday: 
+                    span 08: - 22:00
+                li
+                  a.py-2.d-block(href='#')
+                    | Friday: 
+                    span 08: - 22:00
+                li
+                  a.py-2.d-block(href='#')
+                    | Saturday: 
+                    span 08: - 22:00
+                li
+                  a.py-2.d-block(href='#')
+                    | Sunday: 
+                    span 08: - 22:00
+          .col-md
+            .ftco-footer-widget.mb-4
+              h2.ftco-heading-2 Contact Information
+              ul.list-unstyled
+                li
+                  a.py-2.d-block(href='#') 198 West 21th Street, Suite 721 New York NY 10016
+                li
+                  a.py-2.d-block(href='#') + 1235 2355 98
+                li
+                  a.py-2.d-block(href='#') info@yoursite.com
+                li
+                  a.py-2.d-block(href='#') email@email.com
+          .col-md
+            .ftco-footer-widget.mb-4
+              h2.ftco-heading-2 Newsletter
+              p Far far away, behind the word mountains, far from the countries.
+              form.subscribe-form(action='#')
+                .form-group
+                  span.icon.icon-paper-plane
+                  input.form-control(type='text', placeholder='Subscribe')
+        .row
+          .col-md-12.text-center
+            p
+              // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+              | Copyright ©
+              script.
+                document.write(new Date().getFullYear());
+              |  All rights reserved | This template is made with 
+              i.icon-heart(aria-hidden='true')
+              |  by 
+              a(href='https://colorlib.com', target='_blank') Colorlib
+              // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+              // loader
+              #ftco-loader.show.fullscreen
+                svg.circular(width='48px', height='48px')
+                  circle.path-bg(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke='#eeeeee')
+                  circle.path(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke-miterlimit='10', stroke='#F96D00')
+              script(src='js/jquery.min.js')
+              script(src='js/jquery-migrate-3.0.1.min.js')
+              script(src='js/popper.min.js')
+              script(src='js/bootstrap.min.js')
+              script(src='js/jquery.easing.1.3.js')
+              script(src='js/jquery.waypoints.min.js')
+              script(src='js/jquery.stellar.min.js')
+              script(src='js/owl.carousel.min.js')
+              script(src='js/jquery.magnific-popup.min.js')
+              script(src='js/aos.js')
+              script(src='js/jquery.animateNumber.min.js')
+              script(src='js/bootstrap-datepicker.js')
+              script(src='js/jquery.timepicker.min.js')
+              script(src='js/countrypicker.js')
+              script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
+              script(src='js/google-map.js')
+              script(src='js/main.js')

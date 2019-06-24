@@ -1,24 +1,23 @@
-extends layout
+include partials/header
+section.home-slider.owl-carousel(style="height:30px;")
+    .slider-item(style="background-image: url('/images/bg_2.jpg');")
+// ================ Start banner Area =================
+section.banner-area.relative(style="margin-top:150px;")
+.container
+  .row.height.align-items-center.justify-content-center
+    .banner-content.col-lg-6.offset-3
+      h1(style="color:orange;") User Admin
+      hr
+      .breadcrmb
+        p
+          a(href='index.html' style="color:orange;") Databases
+          span.lnr.lnr-arrow-right
+          a(href='about.html' style="color:orange;") From  ../models
+          a(href='/contactDatabase' style="color:black;")
+            li Contact Database
+          a(href="/eventDatabase" style="color:black;")
+            li Event Database
+          a(href="/userDatabase" style="color:black;")
+            li User Database
 
-block content
-
-  // ================ Start banner Area =================
-  section.banner-area.relative
-    .container
-      .row.height.align-items-center.justify-content-center
-        .banner-content.col-lg-6
-          h1 User Admin
-          hr
-          .breadcrmb
-            p
-              a(href='index.html') Databases
-              span.lnr.lnr-arrow-right
-              a(href='about.html') From  ../models
-              a(href='/contactDatabase')
-                li Contact Database
-              a(href="/eventDatabase")
-                li Event Database
-              a(href="/userDatabase")
-                li User Database
-              
-  
+include partials/footer
